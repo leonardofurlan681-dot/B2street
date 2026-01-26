@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700;800&display=swap');
+
+* { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Poppins', sans-serif; }
+
+body { background-color: #f4f4f4; overflow-x: hidden; }
+
+.bg-pattern {
+    position: fixed;
+    top: 0; left: 0; width: 100%; height: 100%;
+    background: url('fundo.png') repeat;
+    background-size: 350px;
+    opacity: 0.1;
+    z-index: -1;
+}
+
+header {
+    background: #1a1a1a;
+    color: white;
+    padding: 15px 0;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.navbar {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+
+.logo-area { display: flex; align-items: center; gap: 15px; }
+.logo-img { height: 50px; border-radius: 5px; }
+.brand-text h1 { font-size: 1.4rem; font-weight: 800; letter-spacing: 1px; }
+.brand-text p { font-size: 0.7rem; color: #25D366; text-transform: uppercase; font-weight: bold; }
+
+nav ul { display: flex; list-style: none; }
+nav ul li a { color: white; text-decoration: none; margin-left: 20px; font-weight: bold; text-transform: uppercase; font-size: 13px; }
+
+.container { max-width: 1200px; margin: 40px auto; padding: 0 20px; }
+
+.section-title {
+    text-align: center;
+    margin-bottom: 40px;
+    font-size: 2rem;
+    color: #1a1a1a;
+    text-transform: uppercase;
+    font-weight: 800;
+}
+
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+    gap: 30px;
+}
+
+.product-card {
+    background: white;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+    transition: 0.3s ease;
+    border: 1px solid #eee;
+}
+
+.product-card:hover { transform: translateY(-10px); }
+
+.img-box {
+    width: 100%;
+    height: 280px;
+    padding: 20px;
+    background: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.img-box img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+}
+
+.info { padding: 25px; text-align: center; }
+.info h3 { font-size: 1rem; color: #333; margin-bottom: 20px; font-weight: 700; height: 30px; }
+
+.btn-wa {
+    background: #25D366;
+    color: white;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    padding: 15px;
+    border-radius: 10px;
+    font-weight: 800;
+    font-size: 14px;
+    transition: 0.3s;
+    box-shadow: 0 4px 12px rgba(37, 211, 102, 0.3);
+}
+
+.btn-wa:hover { background: #128C7E; transform: scale(1.02); }
+
+footer { background: #1a1a1a; color: white; text-align: center; padding: 30px; margin-top: 60px; }
